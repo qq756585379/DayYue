@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  DayYue
+//
+//  Created by 杨俊 on 2017/10/25.
+//  Copyright © 2017年 Lenovo-Apple. All rights reserved.
+//
+
+#import "OTSUserDefault.h"
+#import "MBProgressHUD+MJ.h"
+#import "LogDefine.h"
+
+#define screen_width  	[UIScreen mainScreen].bounds.size.width
+#define screen_height 	[UIScreen mainScreen].bounds.size.height
+
+/**快速创建弱指针*/
+#define WEAK_SELF    __weak typeof(self)weakSelf = self;
+#define STRONG_SELF  __strong typeof(weakSelf)self = weakSelf;
+
+#define kAppDelegate            [[UIApplication sharedApplication] delegate]
+#define kWindow                 [[UIApplication sharedApplication] keyWindow]
+
+#define LocationService @"http://58.214.21.166:9101"
+
+#define Key @"ServerIP"

@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96A58026E61159901BB2DF50 /* libPods-DayYue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED3C91A34AC1460CCD1C0B5F /* libPods-DayYue.a */; };
+		D41AA41C1FA0DB0300F94BE7 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D41AA41B1FA0DB0300F94BE7 /* MapManager.m */; };
+		F52F41911FA07B8A00E2EC68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F41721FA07B8A00E2EC68 /* AppDelegate.m */; };
+		F52F41921FA07B8A00E2EC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52F41731FA07B8A00E2EC68 /* Assets.xcassets */; };
+		F52F41931FA07B8A00E2EC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52F41741FA07B8A00E2EC68 /* LaunchScreen.storyboard */; };
+		F52F41941FA07B8A00E2EC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52F41761FA07B8A00E2EC68 /* Main.storyboard */; };
+		F52F41951FA07B8A00E2EC68 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F417C1FA07B8A00E2EC68 /* MBProgressHUD+MJ.m */; };
+		F52F41961FA07B8A00E2EC68 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F52F417D1FA07B8A00E2EC68 /* MBProgressHUD.bundle */; };
+		F52F41971FA07B8A00E2EC68 /* OTSArchiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F41821FA07B8A00E2EC68 /* OTSArchiveData.m */; };
+		F52F41981FA07B8A00E2EC68 /* OTSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F41851FA07B8A00E2EC68 /* OTSFileManager.m */; };
+		F52F41991FA07B8A00E2EC68 /* OTSUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F41881FA07B8A00E2EC68 /* OTSUserDefault.m */; };
+		F52F419A1FA07B8A00E2EC68 /* LocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F418B1FA07B8A00E2EC68 /* LocationVC.m */; };
+		F52F419B1FA07B8A00E2EC68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F418D1FA07B8A00E2EC68 /* ViewController.m */; };
+		F52F419C1FA07B8A00E2EC68 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F52F418E1FA07B8A00E2EC68 /* Info.plist */; };
+		F52F419D1FA07B8A00E2EC68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F418F1FA07B8A00E2EC68 /* main.m */; };
+		F52F41A01FA0835F00E2EC68 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52F419F1FA0835F00E2EC68 /* MainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F4E2D548A259AACEA5A405C /* Pods-DayYue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayYue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayYue/Pods-DayYue.debug.xcconfig"; sourceTree = "<group>"; };
+		50064068458483AC28C04F78 /* Pods-DayYue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayYue.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayYue/Pods-DayYue.release.xcconfig"; sourceTree = "<group>"; };
+		D41AA41A1FA0DB0300F94BE7 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapManager.h; sourceTree = "<group>"; };
+		D41AA41B1FA0DB0300F94BE7 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
+		D41AA41D1FA0DCD200F94BE7 /* LogDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogDefine.h; sourceTree = "<group>"; };
+		ED3C91A34AC1460CCD1C0B5F /* libPods-DayYue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DayYue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52F41341FA06F5200E2EC68 /* DayYue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayYue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52F41711FA07B8A00E2EC68 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F52F41721FA07B8A00E2EC68 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F52F41731FA07B8A00E2EC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F52F41751FA07B8A00E2EC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F52F41771FA07B8A00E2EC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F52F417B1FA07B8A00E2EC68 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		F52F417C1FA07B8A00E2EC68 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		F52F417D1FA07B8A00E2EC68 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		F52F41811FA07B8A00E2EC68 /* OTSArchiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSArchiveData.h; sourceTree = "<group>"; };
+		F52F41821FA07B8A00E2EC68 /* OTSArchiveData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSArchiveData.m; sourceTree = "<group>"; };
+		F52F41841FA07B8A00E2EC68 /* OTSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSFileManager.h; sourceTree = "<group>"; };
+		F52F41851FA07B8A00E2EC68 /* OTSFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSFileManager.m; sourceTree = "<group>"; };
+		F52F41871FA07B8A00E2EC68 /* OTSUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSUserDefault.h; sourceTree = "<group>"; };
+		F52F41881FA07B8A00E2EC68 /* OTSUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSUserDefault.m; sourceTree = "<group>"; };
+		F52F418A1FA07B8A00E2EC68 /* LocationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationVC.h; sourceTree = "<group>"; };
+		F52F418B1FA07B8A00E2EC68 /* LocationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationVC.m; sourceTree = "<group>"; };
+		F52F418C1FA07B8A00E2EC68 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F52F418D1FA07B8A00E2EC68 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F52F418E1FA07B8A00E2EC68 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52F418F1FA07B8A00E2EC68 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F52F41901FA07B8A00E2EC68 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F52F419E1FA0835F00E2EC68 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F52F419F1FA0835F00E2EC68 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F52F41311FA06F5200E2EC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A58026E61159901BB2DF50 /* libPods-DayYue.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39DD2A571D0FE65CDFF08B1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED3C91A34AC1460CCD1C0B5F /* libPods-DayYue.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3C66E01303086E803B8899 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E2D548A259AACEA5A405C /* Pods-DayYue.debug.xcconfig */,
+				50064068458483AC28C04F78 /* Pods-DayYue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F52F412B1FA06F5200E2EC68 = {
+			isa = PBXGroup;
+			children = (
+				F52F41701FA07B8A00E2EC68 /* DayYue */,
+				F52F41351FA06F5200E2EC68 /* Products */,
+				DF3C66E01303086E803B8899 /* Pods */,
+				39DD2A571D0FE65CDFF08B1D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F52F41351FA06F5200E2EC68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41341FA06F5200E2EC68 /* DayYue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F52F41701FA07B8A00E2EC68 /* DayYue */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41781FA07B8A00E2EC68 /* Classes */,
+				F52F41711FA07B8A00E2EC68 /* AppDelegate.h */,
+				F52F41721FA07B8A00E2EC68 /* AppDelegate.m */,
+				F52F41731FA07B8A00E2EC68 /* Assets.xcassets */,
+				F52F41741FA07B8A00E2EC68 /* LaunchScreen.storyboard */,
+				F52F41761FA07B8A00E2EC68 /* Main.storyboard */,
+				F52F418E1FA07B8A00E2EC68 /* Info.plist */,
+				F52F418F1FA07B8A00E2EC68 /* main.m */,
+				D41AA41D1FA0DCD200F94BE7 /* LogDefine.h */,
+				F52F41901FA07B8A00E2EC68 /* PrefixHeader.pch */,
+			);
+			path = DayYue;
+			sourceTree = "<group>";
+		};
+		F52F41781FA07B8A00E2EC68 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41791FA07B8A00E2EC68 /* Category */,
+				F52F417E1FA07B8A00E2EC68 /* Tool */,
+				F52F41891FA07B8A00E2EC68 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F52F41791FA07B8A00E2EC68 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F52F417A1FA07B8A00E2EC68 /* MBProgressHUD */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F52F417A1FA07B8A00E2EC68 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F52F417B1FA07B8A00E2EC68 /* MBProgressHUD+MJ.h */,
+				F52F417C1FA07B8A00E2EC68 /* MBProgressHUD+MJ.m */,
+				F52F417D1FA07B8A00E2EC68 /* MBProgressHUD.bundle */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		F52F417E1FA07B8A00E2EC68 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D41AA41A1FA0DB0300F94BE7 /* MapManager.h */,
+				D41AA41B1FA0DB0300F94BE7 /* MapManager.m */,
+				F52F417F1FA07B8A00E2EC68 /* DataCache */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		F52F417F1FA07B8A00E2EC68 /* DataCache */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41801FA07B8A00E2EC68 /* ArchiveData */,
+				F52F41831FA07B8A00E2EC68 /* FileManager */,
+				F52F41861FA07B8A00E2EC68 /* UserDefault */,
+			);
+			path = DataCache;
+			sourceTree = "<group>";
+		};
+		F52F41801FA07B8A00E2EC68 /* ArchiveData */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41811FA07B8A00E2EC68 /* OTSArchiveData.h */,
+				F52F41821FA07B8A00E2EC68 /* OTSArchiveData.m */,
+			);
+			path = ArchiveData;
+			sourceTree = "<group>";
+		};
+		F52F41831FA07B8A00E2EC68 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41841FA07B8A00E2EC68 /* OTSFileManager.h */,
+				F52F41851FA07B8A00E2EC68 /* OTSFileManager.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		F52F41861FA07B8A00E2EC68 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				F52F41871FA07B8A00E2EC68 /* OTSUserDefault.h */,
+				F52F41881FA07B8A00E2EC68 /* OTSUserDefault.m */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		F52F41891FA07B8A00E2EC68 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F52F418A1FA07B8A00E2EC68 /* LocationVC.h */,
+				F52F418B1FA07B8A00E2EC68 /* LocationVC.m */,
+				F52F418C1FA07B8A00E2EC68 /* ViewController.h */,
+				F52F418D1FA07B8A00E2EC68 /* ViewController.m */,
+				F52F419E1FA0835F00E2EC68 /* MainViewController.h */,
+				F52F419F1FA0835F00E2EC68 /* MainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F52F41331FA06F5200E2EC68 /* DayYue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52F414A1FA06F5200E2EC68 /* Build configuration list for PBXNativeTarget "DayYue" */;
+			buildPhases = (
+				505031594779F8E40A72F5CC /* [CP] Check Pods Manifest.lock */,
+				F52F41301FA06F5200E2EC68 /* Sources */,
+				F52F41311FA06F5200E2EC68 /* Frameworks */,
+				F52F41321FA06F5200E2EC68 /* Resources */,
+				2E03749B79571FB120752FB8 /* [CP] Embed Pods Frameworks */,
+				D4188C46D667BFC33C9801D6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayYue;
+			productName = DayYue;
+			productReference = F52F41341FA06F5200E2EC68 /* DayYue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F52F412C1FA06F5200E2EC68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Lenovo-Apple";
+				TargetAttributes = {
+					F52F41331FA06F5200E2EC68 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F52F412F1FA06F5200E2EC68 /* Build configuration list for PBXProject "DayYue" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F52F412B1FA06F5200E2EC68;
+			productRefGroup = F52F41351FA06F5200E2EC68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F52F41331FA06F5200E2EC68 /* DayYue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52F41321FA06F5200E2EC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52F41941FA07B8A00E2EC68 /* Main.storyboard in Resources */,
+				F52F41961FA07B8A00E2EC68 /* MBProgressHUD.bundle in Resources */,
+				F52F41921FA07B8A00E2EC68 /* Assets.xcassets in Resources */,
+				F52F419C1FA07B8A00E2EC68 /* Info.plist in Resources */,
+				F52F41931FA07B8A00E2EC68 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E03749B79571FB120752FB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayYue/Pods-DayYue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		505031594779F8E40A72F5CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4188C46D667BFC33C9801D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayYue/Pods-DayYue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F52F41301FA06F5200E2EC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52F419B1FA07B8A00E2EC68 /* ViewController.m in Sources */,
+				F52F41981FA07B8A00E2EC68 /* OTSFileManager.m in Sources */,
+				D41AA41C1FA0DB0300F94BE7 /* MapManager.m in Sources */,
+				F52F419A1FA07B8A00E2EC68 /* LocationVC.m in Sources */,
+				F52F41951FA07B8A00E2EC68 /* MBProgressHUD+MJ.m in Sources */,
+				F52F41A01FA0835F00E2EC68 /* MainViewController.m in Sources */,
+				F52F41971FA07B8A00E2EC68 /* OTSArchiveData.m in Sources */,
+				F52F41991FA07B8A00E2EC68 /* OTSUserDefault.m in Sources */,
+				F52F419D1FA07B8A00E2EC68 /* main.m in Sources */,
+				F52F41911FA07B8A00E2EC68 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F52F41741FA07B8A00E2EC68 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52F41751FA07B8A00E2EC68 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F52F41761FA07B8A00E2EC68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52F41771FA07B8A00E2EC68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F52F41481FA06F5200E2EC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F52F41491FA06F5200E2EC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F52F414B1FA06F5200E2EC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4E2D548A259AACEA5A405C /* Pods-DayYue.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
+				GCC_PREFIX_HEADER = $SRCROOT/DayYue/PrefixHeader.pch;
+				INFOPLIST_FILE = DayYue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.DayYue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F52F414C1FA06F5200E2EC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50064068458483AC28C04F78 /* Pods-DayYue.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
+				GCC_PREFIX_HEADER = $SRCROOT/DayYue/PrefixHeader.pch;
+				INFOPLIST_FILE = DayYue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.DayYue";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F52F412F1FA06F5200E2EC68 /* Build configuration list for PBXProject "DayYue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52F41481FA06F5200E2EC68 /* Debug */,
+				F52F41491FA06F5200E2EC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52F414A1FA06F5200E2EC68 /* Build configuration list for PBXNativeTarget "DayYue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52F414B1FA06F5200E2EC68 /* Debug */,
+				F52F414C1FA06F5200E2EC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F52F412C1FA06F5200E2EC68 /* Project object */;
+}

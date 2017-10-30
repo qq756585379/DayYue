@@ -120,6 +120,9 @@
 #pragma mark 定位失败
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     DLog(@"定位失败:error:%@", error.localizedDescription);
+    if (error.code == kCLErrorDenied) {
+        DLog(@"kCLErrorDenied");
+    }
     [self locationWithIp];
     [self.locationManager stopUpdatingLocation];
 }

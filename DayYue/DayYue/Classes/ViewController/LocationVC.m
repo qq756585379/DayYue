@@ -41,7 +41,6 @@
     self.context = [_webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
     
     WEAK_SELF
-	//web调用  getServerIP(selectedSide.url) 把url传过来
     self.context[@"getServerIP"] =  ^(NSString *urlStr){
         STRONG_SELF
         NSLog(@"url is %@",urlStr);
@@ -49,7 +48,7 @@
             [OTSUserDefault setValue:urlStr forKey:Key];
             MainViewController *mainVC = [[MainViewController alloc] init];
             mainVC.urlStr = urlStr;
-            [self.navigationController pushViewController:mainVC animated:YES];
+            [self.navigationController pushViewController:mainVC animated:NO];
         });
     };
     

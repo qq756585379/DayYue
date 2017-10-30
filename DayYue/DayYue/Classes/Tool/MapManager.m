@@ -127,10 +127,6 @@
     [self.locationManager stopUpdatingLocation];
 }
 
-- (void)dealloc{
-    self.locationManager.delegate = nil;
-}
-
 -(CLLocationManager *)locationManager{
     if (!_locationManager) {
         _locationManager = [[CLLocationManager alloc] init];
@@ -139,6 +135,10 @@
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     }
     return _locationManager;
+}
+
+- (void)dealloc{
+    self.locationManager.delegate = nil;
 }
 
 @end

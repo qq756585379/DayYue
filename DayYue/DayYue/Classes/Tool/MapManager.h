@@ -13,7 +13,7 @@ typedef void (^CLManagerCompleteBlock)(CLPlacemark *mark, NSDictionary *addressD
 
 @interface MapManager : NSObject
 
-+(MapManager *)sharedInstance;
++ (MapManager *)sharedInstance;
 
 - (void)startSearchLocation;
 

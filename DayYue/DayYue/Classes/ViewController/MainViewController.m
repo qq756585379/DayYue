@@ -8,9 +8,10 @@
 
 #import "MainViewController.h"
 #import "MapManager.h"
+#import "STQRCodeController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 
-@interface MainViewController ()<UIWebViewDelegate>
+@interface MainViewController ()<UIWebViewDelegate,STQRCodeControllerDelegate>
 @property (nonatomic, strong) UIWebView *webView;
 @property (nonatomic, strong) NSNumber *longitute;
 @property (nonatomic, strong) NSNumber *latitude;
@@ -26,6 +27,7 @@
     [self.view addSubview:self.webView];
     
     NSURL *url = [NSURL URLWithString:self.urlStr];
+    DLog(@"url ---- %@",url);
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }
@@ -91,7 +93,12 @@
 }
 
 -(void)scanCode{
-    
+    STQRCodeController *codeVC = [[STQRCodeController alloc]init];
+    codeVC.delegate = self;
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:codeVC];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self presentViewController:navVC animated:YES completion:nil];
+    });
 }
 
 -(void)getCurrentLocation{
@@ -120,6 +127,17 @@
      "document.getElementsByTagName('head')[0].appendChild(script);"];
     [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"commitResult(%@,%@);",longitudeStr,latitudeStr]];
     _hasLocationed = YES;
+}
+
+#pragma mark - --- delegate 视图委托 ---
+- (void)qrcodeController:(STQRCodeController *)qrcodeController readerScanResult:(NSString *)readerScanResult type:(STQRCodeResultType)resultType{
+    NSLog(@"%s %@", __FUNCTION__, readerScanResult);
+    NSLog(@"%s %lu", __FUNCTION__, (unsigned long)resultType);
+    
+    if ((resultType == STQRCodeResultTypeError) || (resultType == STQRCodeResultTypeNoInfo)) {
+        readerScanResult = @"没有扫描到结果";
+    }
+    [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"commitQRResult('%@');",readerScanResult]];
 }
 
 #pragma mark - UIWebViewDelegate
